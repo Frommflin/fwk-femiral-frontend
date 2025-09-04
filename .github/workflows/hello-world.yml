@@ -1,9 +1,6 @@
 name: hello-world-actions
 run-name: ${{ github.actor }} is working in the frontend repository
-on: 
-  push:
-  pull_request:
-    types: [opened,reopened]
+on: [push, pull_request]
 jobs:
   print-hello-world:
     runs-on: ubuntu-latest
