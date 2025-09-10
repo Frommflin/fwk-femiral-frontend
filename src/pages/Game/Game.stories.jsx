@@ -1,6 +1,8 @@
+import Game from "./Game.page"
+
 export default {
     title: "Pages/Game",
-    component: () => <h1>Empty story prevents Storybook crash</h1>,
+    component: Game,
 }
 
 export const Default = {}
