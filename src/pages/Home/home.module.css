@@ -1,0 +1,25 @@
+.container {
+  width: 600px;
+  margin: 40px auto; /* center horizontally */
+  padding: 25px;
+  border: 2px solid #444;
+  border-radius: 12px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.heading {
+  margin-bottom: 20px;
+  padding: 12px;
+  border-bottom: 2px solid #ccc;
+}
+
+.text {
+  margin-top: 15px;
+  padding: 12px;
+  line-height: 1.6;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
