@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './login.module.css'
 
-const Game = () => {
+const Login = () => {
   return (
     <>
       <div className={styles.container}>
@@ -14,4 +14,4 @@ const Game = () => {
   )
 }
 
-export default Game
+export default Login
