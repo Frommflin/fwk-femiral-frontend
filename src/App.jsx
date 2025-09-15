@@ -1,8 +1,12 @@
+import { BrowserRouter } from "react-router-dom"
+import AppRoutes from "./routes/AppRoutes"
 
 function App() {
 
   return (
-    <h1> Play With Femiral</h1>
+    <BrowserRouter>
+      <AppRoutes></AppRoutes>
+    </BrowserRouter>
   )
 }
 

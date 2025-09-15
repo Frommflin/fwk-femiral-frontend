@@ -5,7 +5,7 @@ const Register = () => {
   return (
     <>
       <div className={styles.container}>
-        <h1 className={styles.heading}>Login Page</h1>
+        <h1 className={styles.heading}>Register Page</h1>
         <div className={styles.text}>
           This is the page where the user creates an account.
         </div>
