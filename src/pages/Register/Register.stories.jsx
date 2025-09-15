@@ -1,6 +1,8 @@
+import Register from "./Register.page"
+
 export default {
     title: "Pages/Register",
-    component: () => <h1>Empty story prevents Storybook crash</h1>,
+    component: Register,
 }
 
 export const Default = {}
