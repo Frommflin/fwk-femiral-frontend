@@ -4,11 +4,11 @@ import AppProvider from "./providers/AppProvider";
 
 function App() {
   return (
-    <AppProvider>
-      <BrowserRouter>
+    <BrowserRouter>
+      <AppProvider>
         <AppRoutes></AppRoutes>
-      </BrowserRouter>
-    </AppProvider>
+      </AppProvider>
+    </BrowserRouter>
   );
 }
 

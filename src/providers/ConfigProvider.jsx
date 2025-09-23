@@ -1,5 +1,10 @@
-import React from 'react'
+import React, { createContext, useContext } from "react";
 
-const ConfigProvider = () => {}
+const ConfigContext = createContext();
+export const useConfig = () => useContext(ConfigContext);
 
-export default ConfigProvider
+const ConfigProvider = ({ children }) => {
+  return <ConfigContext.Provider value={{}}>{children}</ConfigContext.Provider>;
+};
+
+export default ConfigProvider;
