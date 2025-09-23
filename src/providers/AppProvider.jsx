@@ -8,9 +8,7 @@ const AppProvider = ({ children }) => (
     {/* Providers är utkommenterade för att applikationen ska funka
     tills dess att de är skapade och funkar */}
     {/* <AuthProvider> */}
-    {/* <ApiProvider> */}
-    {children}
-    {/* </ApiProvider> */}
+    <ApiProvider>{children}</ApiProvider>
     {/* </AuthProvider> */}
   </ConfigProvider>
 );
