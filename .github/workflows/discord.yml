@@ -5,7 +5,7 @@ jobs:
    runs-on: ubuntu-latest
    steps:
    - name: Message discord
-     uses: sepastianpopp/discord-action@releases/v2
+     uses: sebastianpopp/discord-action@releases/v2
      with:
        webhook: ${{ secrets.DISCORD_WEBHOOK }}
        message: ${{ github.actor }} has done a ${{ github.event_name }} to ${{ github.repository }} (commit= ${{ github.sha }})
