@@ -7,12 +7,34 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: benjlevesque/short-sha@v3.0
+        id: short-sha
+        with:
+          length: 7
+
       - name: Use Node version 22.19.0
         uses: actions/setup-node@v4
         with:
           node-version: 22.19.0
           cache: 'npm'
+
       - name: Install dependencies
         run: npm install
+
       - name: Build application
         run: npm run build
+
+      - name: Discord success-report
+        if: ${{ success() }}
+        uses: sebastianpopp/discord-action@releases/v2
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          message: ✅ Build succeeded for ${{ github.repository }} at ${{ env.SHA }} by ${{ github.actor }}
+
+      - name: Discord failure-report
+        if: ${{ failure() }}
+        uses: sebastianpopp/discord-action@releases/v2
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          message: ❌ Build failed for ${{ github.repository }} at ${{ env.SHA }} by ${{ github.actor }}
+
