@@ -35,3 +35,7 @@
 ### Kör storybook
 
 `npm run storybook`
+
+## CI workflow
+
+Projektet genomgår test ab bygge (`npm run build`) vid varje push in i `master`-branchen. Resultat av bygget hittas under `Actions` > `Node.js CI` i repo-menyn, alternativ navigera direkt till `https://github.com/Frommflin/fwk-femiral-frontend/actions/workflows/react-build.yml`
