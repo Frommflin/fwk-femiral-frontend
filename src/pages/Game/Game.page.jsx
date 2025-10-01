@@ -7,16 +7,14 @@ import { FiveInRowContainer } from "femiral-components-lib";
 const Game = () => {
   return (
     <>
-      <div className={styles.container}>
-        <h1 className={styles.heading}>Game Page</h1>
-        <div className={styles.text}>
-          <FiveInRowContainer
-            numberOfButtons={10}
-            size={10}
-            onClick={() => {}}
-            coloredCells={[]}
-          />
-        </div>
+      <div className={styles.gameContainer}>
+        <FiveInRowContainer
+          numberOfButtons={10}
+          size={10}
+          onClick={() => {}}
+          coloredCells={[]}
+          classNameGameSquare={styles.gameSquare}
+        />
       </div>
     </>
   );
