@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./game.module.css";
 import { GameBoard2 } from "femiral-components-lib";
+import { ButtonRow } from "femiral-components-lib";
+import { FiveInRowContainer } from "femiral-components-lib";
 
 const Game = () => {
   return (
@@ -8,9 +10,11 @@ const Game = () => {
       <div className={styles.container}>
         <h1 className={styles.heading}>Game Page</h1>
         <div className={styles.text}>
-          <GameBoard2
-            size={7}
-            coloredCells={[{ row: 6, col: 1, color: "red" }]}
+          <FiveInRowContainer
+            numberOfButtons={10}
+            size={10}
+            onClick={() => {}}
+            coloredCells={[]}
           />
         </div>
       </div>
