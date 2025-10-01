@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./home.module.css";
 import { GameBoard2 } from "femiral-components-lib";
-import "femiral-components-lib/style.css";
 
 const Home = () => {
   return (
