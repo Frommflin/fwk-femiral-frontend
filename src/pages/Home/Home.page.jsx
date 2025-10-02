@@ -6,7 +6,7 @@ const Home = () => {
   const styleOverride = {
     width: "70%",
     height: "450px",
-    margin: "20px auto",
+    margin: "0 auto",
     backgroundColor: "#e0e0e0",
   };
 

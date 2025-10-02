@@ -1,5 +1,6 @@
 import { Header } from "femiral-components-lib";
 import React from "react";
+import styles from "./layout.module.css";
 
 const Layout = ({ children }) => {
   const pages = [
@@ -11,7 +12,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header title="Fyra I Rad" navLinks={pages} />
-      <div>{children}</div>
+      <div className={styles.main}>{children}</div>
     </>
   );
 };
