@@ -1,17 +1,17 @@
-import React from 'react'
-import styles from './register.module.css'
+import React from "react";
+import styles from "./register.module.css";
+import { RegisterForm } from "femiral-components-lib";
 
 const Register = () => {
+  const handleSubmit = (user) => {
+    alert(`user registered with username: ${user.username}`);
+  };
+
   return (
     <>
-      <div className={styles.container}>
-        <h1 className={styles.heading}>Register Page</h1>
-        <div className={styles.text}>
-          This is the page where the user creates an account.
-        </div>
-      </div>
+      <RegisterForm onSubmit={handleSubmit} />
     </>
-  )
-}
+  );
+};
 
-export default Register
+export default Register;
